@@ -21,7 +21,6 @@ def insertIntoQuizzes(rows):
 
     add_quizz = ("INSERT INTO quizzes (quiz_canvas_id, quiz_assignment_id, quiz_title, quiz_description) " + "VALUES (%s, %s, %s, %s)")
 
-    # Insert World Population
     cursor.executemany(add_quizz, rows)
 
     # Make sure data is committed to the database
